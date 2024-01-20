@@ -5,20 +5,31 @@ export default function Header(){
     const activeStyles = {
         fontWeight: "bold",
         textDecoration: "underline",
-        color: red
+        color: "red"
     }
     return(
         <header>
-
-        <Link className="site-logo" to="/">#Fat2Fitter</Link>
-        <nav>
-            <NavLink
-                to="/activities"
-                style={({isActive}) => isActive ? activeStyles : null}
+            <Link className="site-logo" to="/">#FAT2Fitter</Link>
+            <nav>
+                <NavLink
+                    to="/activities"
+                    style={({isActive}) => isActive ? activeStyles : null}
+                    >
+                    Activities
+                </NavLink>
+                <NavLink
+                    to="/daily"
+                    style={({isActive}) => isActive ? activeStyles : null}
                 >
-                Activities
-            </NavLink>
-        </nav>
+                    Daily
+                </NavLink>
+                <NavLink
+                    to="/weekly"
+                    style={({isActive}) => isActive ? activeStyles : null}
+                >
+                    Weekly
+                </NavLink>
+            </nav>
         </header>
     )
 }
