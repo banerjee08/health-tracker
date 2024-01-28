@@ -1,0 +1,34 @@
+header{
+    display: flex;
+    align-items: center;
+    padding-block: 10px;
+    height: 110px;
+    justify-content: space-between;
+    /* border: 1px red solid; */
+    padding: 0 2rem;
+}
+.siteLogo{
+    font-size: 25px;
+    font-weight: 450;
+}
+
+.siteLogo strong{
+    font-weight: 900
+}
+
+header a{
+    text-decoration: none; 
+    color: #5a5a5a;
+}
+
+header nav{
+    font-size: 18px;
+    display: flex;
+    gap: 15px;
+    font-weight: 600;
+    padding: 5px 20px;
+}
+
+header a:hover{
+   color: #161616;
+}

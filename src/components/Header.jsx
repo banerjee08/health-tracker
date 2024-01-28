@@ -1,15 +1,16 @@
 import React from "react"
 import { Link, NavLink } from "react-router-dom"
+import styles from "../Styles/Header.module.css";  
 
 export default function Header(){
     const activeStyles = {
         fontWeight: "bold",
         textDecoration: "underline",
-        color: "red"
+        color: "#161616"
     }
     return(
         <header>
-            <Link className="site-logo" to="/">#FAT2Fitter</Link>
+            <Link className={styles.siteLogo} to="/"><strong>#FAT2</strong>Fitter</Link>
             <nav>
                 <NavLink
                     to="/activities"
